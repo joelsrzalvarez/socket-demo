@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Colors</title>
+    <style>
+        .game-container {
+            position: relative;
+            height: 100vh; 
+            width: 100%; 
+        }
+        .player {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            border: 2px solid black;
+            position: absolute;
+            bottom: 00;
+        }
+        .player1 {
+            background-color: blue;
+            left: 0; 
+        }
+        .player2 {
+            background-color: red;
+            right: 0; 
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <h1 id="playerTitle"></h1>
+    <div class="game-container">
+        <div id="player1" class="player player1">Player 1</div>
+        <div id="player2" class="player player2">Player 2</div>
+    </div>
+    <script src="./socket.io.min.js"></script>
+    <script type="module" src="./main.js"></script>
+</body>
+
+
+</html>
